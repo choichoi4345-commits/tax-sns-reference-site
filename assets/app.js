@@ -35,6 +35,7 @@
     threads: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M16 8v5.4a3 3 0 0 0 5.4 1.7A9 9 0 1 0 17.6 20"/></svg>',
     tiktok: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3h-2.7v11.3a2.6 2.6 0 1 1-2.2-2.6V9a5.3 5.3 0 1 0 4.9 5.3V8.8a6.3 6.3 0 0 0 3.5 1.1V7.2a3.6 3.6 0 0 1-3.5-3.6V3Z"/></svg>',
     facebook: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l.4-3H13v-2c0-.6.4-1 1-1Z"/></svg>',
+    naver: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm4 4v10h3.2v-5.2L14.8 17H18V7h-3.2v5.2L11.2 7H8Z"/></svg>',
     doc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>',
     gov: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10 12 4l9 6M5 10v9h14v-9M9 19v-5h6v5"/></svg>',
     tag: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.6 13.4 12 22l-9-9V4h9l8.6 8.6a1 1 0 0 1 0 1.4Z"/><circle cx="7.5" cy="8.5" r="1.6"/></svg>'
@@ -45,11 +46,12 @@
     instagram: { name: '인스타그램', handle: '@taxnote.kr', time: 12 * 60, color: '#F2749D' },
     threads:   { name: '쓰레드',     handle: '@taxnote.kr', time: 15 * 60, color: '#EDF2F9' },
     tiktok:    { name: '틱톡',       handle: '@taxnote',    time: 9 * 60,  color: '#5AF3EE' },
-    facebook:  { name: '페이스북',   handle: '세금 노트',    time: 12 * 60, color: '#7FA9FF' }
+    facebook:  { name: '페이스북',   handle: '세금 노트',    time: 12 * 60, color: '#7FA9FF' },
+    naver:     { name: '네이버 블로그', handle: 'blog.naver.com/taxnote', time: 10 * 60, color: '#3DDC84' }
   };
 
   // 레일 배치상의 단계 위치(채널별 게시 단계)
-  var CH_STAGE = { youtube: 2, tiktok: 2, instagram: 3, facebook: 3, threads: 4 };
+  var CH_STAGE = { youtube: 2, tiktok: 2, naver: 3, instagram: 4, facebook: 4, threads: 5 };
 
   /* ------------------------------------------------------------- pipeline */
   var STAGES = [
@@ -64,20 +66,21 @@
       ],
       outputs: ['소재 브리프 1건', '채널별 키워드 세트'],
       channels: [],
-      human: '0분', extra: ['소재 확정', '06:00 자동', '5개']
+      human: '0분', extra: ['소재 확정', '06:00 자동', '6개']
     },
     {
       hour: 8, short: '원고·영상 생성', kicker: '02 · GENERATE',
-      title: '쇼츠·카드뉴스·쓰레드 원고 동시 생성',
-      desc: '확정된 소재 1건을 채널 포맷에 맞게 나눕니다. 30초 쇼츠 스크립트와 세로 영상, 카드뉴스 5장 카피, 쓰레드 원고가 한 번에 만들어지고 브랜드 톤·금지어 규칙은 고정됩니다.',
+      title: '쇼츠·카드뉴스·블로그·쓰레드 원고 동시 생성',
+      desc: '확정된 소재 1건을 채널 포맷에 맞게 나눕니다. 쇼츠 스크립트와 세로 영상, 카드뉴스 5장 카피, 네이버 블로그 3,000자 원고와 본문 이미지 5장, 쓰레드 원고가 한 번에 만들어지고 브랜드 톤·금지어 규칙은 고정됩니다.',
       bullets: [
-        '쇼츠 30초 스크립트 + 세로 영상 1편',
-        '카드뉴스 5장(표지·본문 3장·마무리) 카피와 해시태그',
+        '쇼츠 스크립트 + 세로 영상 1편',
+        '카드뉴스 5장 카피와 해시태그',
+        '네이버 블로그 원고 3,000자 + 본문 이미지 5장',
         '쓰레드 원고 1편 — 존댓말·정보형 톤 고정'
       ],
-      outputs: ['쇼츠 영상', '카드뉴스 5장', '쓰레드 원고'],
-      channels: ['youtube', 'instagram', 'threads', 'tiktok', 'facebook'],
-      human: '검토 5분 (선택)', extra: ['변환 규칙', '5개 포맷', '1소재']
+      outputs: ['쇼츠 영상', '카드뉴스 5장', '블로그 원고', '쓰레드 원고'],
+      channels: ['youtube', 'instagram', 'naver', 'threads', 'tiktok', 'facebook'],
+      human: '검토 5분 (선택)', extra: ['변환 규칙', '6개 포맷', '1소재']
     },
     {
       hour: 9, short: '쇼츠·틱톡 업로드', kicker: '03 · DISTRIBUTE',
@@ -93,7 +96,20 @@
       human: '0분', extra: ['게시 시각', '09:00 자동', '2개 채널']
     },
     {
-      hour: 12, short: '인스타·페이스북', kicker: '04 · DISTRIBUTE',
+      hour: 10, short: '블로그 발행', kicker: '04 · DISTRIBUTE',
+      title: '네이버 블로그 자동 발행',
+      desc: '검색 키워드에 맞춘 3,000자 정보형 포스팅을 소제목·목차·본문 이미지 5장과 함께 발행합니다. 검색 유입이 많은 오전 시간에 맞춰 예약 발행되고, 발행 URL은 로그로 남습니다.',
+      bullets: [
+        '대표 키워드·연관 키워드 반영한 제목과 소제목 5개',
+        '본문 3,000자 + 이미지 5장(1200×800) 자동 배치',
+        '해시태그 11개 · 면책 문구 자동 삽입 후 발행'
+      ],
+      outputs: ['블로그 원고 3,022자', '본문 이미지 5장'],
+      channels: ['naver'],
+      human: '0분', extra: ['게시 시각', '10:00 자동', '1개 채널']
+    },
+    {
+      hour: 12, short: '인스타·페이스북', kicker: '05 · DISTRIBUTE',
       title: '인스타그램 카드뉴스 & 페이스북 자동 업로드',
       desc: '카드뉴스 5장을 인스타그램 캐러셀로, 같은 소재를 페이스북 페이지에는 영상과 요약 글로 올립니다. 점심시간 트래픽에 맞춘 게시 시각입니다.',
       bullets: [
@@ -106,7 +122,7 @@
       human: '0분', extra: ['게시 시각', '12:00 자동', '2개 채널']
     },
     {
-      hour: 15, short: '쓰레드 업로드', kicker: '05 · DISTRIBUTE',
+      hour: 15, short: '쓰레드 업로드', kicker: '06 · DISTRIBUTE',
       title: '쓰레드 자동 업로드',
       desc: '원고를 쓰레드 말투로 다듬어 게시합니다. 링크 없이 읽히는 정보형 글이라 저장·공유가 남고, 프로필 방문으로 이어집니다.',
       bullets: [
@@ -119,17 +135,17 @@
       human: '0분', extra: ['게시 시각', '15:00 자동', '1개 채널']
     },
     {
-      hour: 22, short: '리포트·예약', kicker: '06 · REPORT',
+      hour: 22, short: '리포트·예약', kicker: '07 · REPORT',
       title: '반응 집계 & 다음 날 예약 완료',
-      desc: '5개 채널의 노출·저장·프로필 방문을 한 장으로 모으고, 다음 날 06:00 소재 수집이 예약된 상태로 하루를 닫습니다. 사람은 숫자만 확인하면 됩니다.',
+      desc: '6개 채널의 노출·저장·프로필 방문을 한 장으로 모으고, 다음 날 06:00 소재 수집이 예약된 상태로 하루를 닫습니다. 사람은 숫자만 확인하면 됩니다.',
       bullets: [
         '채널별 반응 합산 리포트 1장',
         '다음 날 소재 후보 미리 저장',
         '06:00 수집 → 22:00 리포트 자동 순환'
       ],
       outputs: ['일일 리포트', '다음 날 예약'],
-      channels: ['youtube', 'instagram', 'threads', 'tiktok', 'facebook'],
-      human: '확인 3분', extra: ['리포트', '22:00 자동', '5개 채널']
+      channels: ['youtube', 'instagram', 'naver', 'threads', 'tiktok', 'facebook'],
+      human: '확인 3분', extra: ['리포트', '22:00 자동', '6개 채널']
     }
   ];
 
@@ -154,6 +170,11 @@
       specs: [['형식', '세로 영상'], ['비율', '9:16'], ['캡션', '해시태그 자동'], ['자산', 'tax-shorts-10s-bgm.mp4']],
       preview: { type: 'tall', src: './assets/tax-shorts-thumbnail.png', cap: 'tax-shorts-thumbnail.png', right: '09:00 업로드' }
     },
+    naver: {
+      flow: ['06:00 소재 반영', '08:00 블로그 원고·이미지 5장 생성', '10:00 예약 자동 발행', '22:00 반응 집계'],
+      specs: [['형식', '정보형 포스팅'], ['분량', '3,022자'], ['이미지', '5장 · 1200×800'], ['자산', 'naver-blog-post.txt']],
+      preview: { type: 'wide', src: './assets/blog/naver-blog-1.jpg', cap: 'naver-blog-1~5.jpg', right: '10:00 발행' }
+    },
     facebook: {
       flow: ['06:00 소재 반영', '08:00 요약 글 작성', '12:00 릴스·글 게시', '22:00 반응 집계'],
       specs: [['형식', '릴스 + 텍스트'], ['비율', '9:16'], ['요약', '5줄'], ['자산', 'mp4 + 요약 글']],
@@ -170,16 +191,17 @@
     },
     1: { type: 'tall', src: './assets/tax-shorts-thumbnail.png', cap: 'tax-shorts-thumbnail.png', right: '변환 완료' },
     2: { type: 'tall', src: './assets/tax-shorts-thumbnail.png', cap: 'tax-shorts-10s-bgm.mp4', right: '업로드 완료' },
-    3: { type: 'card', src: './assets/tax-insta-card-1.png', cap: 'tax-insta-card-1~5.png', right: '게시 완료' },
-    4: {
+    3: { type: 'wide', src: './assets/blog/naver-blog-1.jpg', cap: 'naver-blog-post.txt · 이미지 5장', right: '발행 완료' },
+    4: { type: 'card', src: './assets/tax-insta-card-1.png', cap: 'tax-insta-card-1~5.png', right: '게시 완료' },
+    5: {
       type: 'text',
       html: '<p><b>세금은 12월이 되면 갑자기 줄어들지 않습니다.</b></p>' +
             '<p style="margin-top:7px;color:#7A8BA1">사업용 카드와 계좌를 홈택스에 미리 등록해두면 경비 증빙이 자동으로 쌓입니다. 놓치는 경비 1원도 없게요.</p>',
       cap: '원고 전체 게시', right: '15:00'
     },
-    5: {
+    6: {
       type: 'text',
-      html: '<p><b>일일 리포트</b> · 5개 채널 반응 합산</p>' +
+      html: '<p><b>일일 리포트</b> · 6개 채널 반응 합산</p>' +
             '<p style="margin-top:7px;color:#7A8BA1">노출 · 저장 · 프로필 방문 항목을 한 장으로 정리<br>다음 날 06:00 소재 수집 예약 완료</p>',
       cap: 'Daily report', right: '예약 완료'
     }
@@ -292,7 +314,7 @@
         '<figcaption style="position:static;background:none;padding:10px 0 0;border-top:1px solid rgba(232,238,247,.07);margin-top:10px">' +
         p.cap + ' <em style="color:#78E7BE;font-style:normal;font-weight:700;margin-left:auto">' + p.right + '</em></figcaption></figure>';
     }
-    var cls = p.type === 'card' ? 'preview--card' : 'preview--tall';
+    var cls = p.type === 'card' ? 'preview--card' : (p.type === 'wide' ? 'preview--wide' : 'preview--tall');
     return '<figure class="preview ' + cls + '" style="margin:16px 0 0">' +
       '<img src="' + p.src + '" alt="' + p.cap + ' 미리보기" loading="lazy">' +
       '<figcaption><span>' + p.cap + '</span><em>' + p.right + '</em></figcaption></figure>';
@@ -557,6 +579,27 @@
     });
     stage.addEventListener('pointercancel', function () { startX = null; });
     render();
+  })();
+
+  /* ------------------------------------------------- naver blog gallery */
+  (function initNaver() {
+    var main = $('#nvMain'), cap = $('#nvCap');
+    var thumbs = $$('#nvThumbs button'), outline = $$('#nvOutline button');
+    if (!main || !thumbs.length) return;
+    function show(i) {
+      var t = thumbs[i - 1];
+      main.src = './assets/blog/naver-blog-' + i + '.jpg';
+      main.alt = '본문 이미지 ' + i + ' — ' + t.getAttribute('data-cap');
+      if (cap) cap.textContent = '이미지 ' + i + ' / 5 · ' + t.getAttribute('data-cap');
+      thumbs.forEach(function (b, k) {
+        b.classList.toggle('on', k === i - 1);
+        b.setAttribute('aria-pressed', k === i - 1 ? 'true' : 'false');
+      });
+      outline.forEach(function (b, k) { b.classList.toggle('on', k === i - 1); });
+    }
+    thumbs.concat(outline).forEach(function (b) {
+      b.addEventListener('click', function () { show(parseInt(b.getAttribute('data-i'), 10)); });
+    });
   })();
 
   /* ---------------------------------------------------------- reveal */
