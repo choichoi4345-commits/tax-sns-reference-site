@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>세무법인·세무사 24시간 SNS 자동화 레퍼런스 | SNS AUTO 24</title>
+<meta name="description" content="세무 이슈 1건을 쇼츠·카드뉴스·쓰레드 원고로 바꿔 5개 채널에 자동 업로드하는 24시간 무인 운영 레퍼런스. 실제 제작된 세무 콘텐츠와 채널별 자동 업로드 화면을 확인하세요.">
+<meta name="theme-color" content="#0A1019">
+<meta property="og:title" content="세무법인·세무사 24시간 SNS 자동화 레퍼런스">
+<meta property="og:description" content="대표님이 상담과 업무에 집중하는 24시간, SNS는 멈추지 않습니다. 1일 1소재 → 5개 채널 동시 변환·자동 업로드.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23F0B660'/%3E%3Cpath d='M13 10.5v11l9-5.5-9-5.5Z' fill='%231B1205'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./assets/styles.css">
+<noscript><style>.reveal{opacity:1 !important;translate:0 0 !important;}</style></noscript>
+</head>
+<body>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<!-- ================= Header ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="SNS AUTO 24 홈">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 6.5v11l9.5-5.5L9 6.5Z"/></svg>
+      </span>
+      <span class="logo__txt">
+        <b>SNS AUTO 24</b>
+        <span>TAX REFERENCE</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="주요 섹션">
+      <a href="#pipeline">24시간 파이프라인</a>
+      <a href="#reference">채널 레퍼런스</a>
+      <a href="#effect">도입 효과</a>
+      <a href="#proposal">제안서</a>
+    </nav>
+    <a class="btn btn--amber btn--sm header-cta" href="#reference">
+      실제 산출물 보기
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ================= Hero ================= -->
+<section class="hero" id="top">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero__grid-2">
+      <div class="hero__copy">
+        <span class="badge badge--live"><span class="dot dot--pulse"></span>LIVE 24/7 · 무인 자동 운영 중</span>
+        <h1>
+          대표님이 상담과 업무에<br>집중하는 24시간,
+          <span class="line"><span class="accent">SNS는 멈추지 않습니다</span></span>
+        </h1>
+        <p class="hero__sub">
+          세무 이슈 1건을 수집해 <b>쇼츠·카드뉴스·쓰레드 원고</b>로 동시에 변환하고,
+          채널별 최적 시간에 <b>5개 채널</b>로 자동 업로드합니다.
+          세무법인·세무사 사무소를 위한 24시간 SNS 자동화 실전 레퍼런스입니다.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--amber" href="#pipeline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg>
+            24시간 파이프라인 보기
+          </a>
+          <a class="btn btn--ghost" href="#reference">
+            채널별 실제 산출물
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="hero__kpis">
+          <div class="kpi">
+            <b>1일 <em>1소재</em></b>
+            <span>소재 하나로 5개 채널 동시 변환</span>
+          </div>
+          <div class="kpi">
+            <b>월 <em>60시간</em>+</b>
+            <span>기획·제작·업로드 공수 절감</span>
+          </div>
+          <div class="kpi">
+            <b>24시간</b>
+            <span>예약 시각 무인 자동 업로드</span>
+          </div>
+          <div class="kpi">
+            <b>5채널</b>
+            <span>유튜브·인스타·쓰레드·틱톡·페이스북</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live console -->
+      <div class="console" aria-label="자동 운영 상태 콘솔 (시뮬레이션)">
+        <div class="console__bar">
+          <span class="console__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="console__name">auto-run.console</span>
+          <span class="badge badge--ok console__live"><span class="dot"></span>RUNNING</span>
+        </div>
+        <div class="console__body">
+          <div class="console__clock">
+            <div>
+              <div class="lbl">KOREA STANDARD TIME</div>
+              <div class="t" id="kTIME">09:00<span>KST</span></div>
+            </div>
+            <div class="right">
+              <b id="kStage">다음 · 09:00 유튜브 쇼츠</b>
+              <span>오늘의 자동 운영</span>
+            </div>
+          </div>
+          <ul class="ch-list" id="consoleList">
+            <li class="ch-row">
+              <span class="ch-row__ico" style="color:#FF6B6B" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.2-.4-4.7a2.4 2.4 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4a2.4 2.4 0 0 0-1.7 1.7C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.8.9 1.5 1.7 1.7 1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.4 2.4 0 0 0 1.7-1.7c.4-1.5.4-4.7.4-4.7Z"/><path d="M9.8 15.3V8.7L15.5 12l-5.7 3.3Z" fill="#0A1019"/></svg>
+              </span>
+              <span class="ch-row__name"><b>유튜브 쇼츠</b><span>@taxnote · 세로 영상 10초</span></span>
+              <span class="ch-row__st"><span class="st-txt st-txt--wait" data-ch="youtube"></span><span class="t">09:00</span></span>
+            </li>
+            <li class="ch-row">
+              <span class="ch-row__ico" style="color:#5AF3EE" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3h-2.7v11.3a2.6 2.6 0 1 1-2.2-2.6V9a5.3 5.3 0 1 0 4.9 5.3V8.8a6.3 6.3 0 0 0 3.5 1.1V7.2a3.6 3.6 0 0 1-3.5-3.6V3Z"/></svg>
+              </span>
+              <span class="ch-row__name"><b>틱톡</b><span>@taxnote · 동일 영상 자동 변환</span></span>
+              <span class="ch-row__st"><span class="st-txt st-txt--wait" data-ch="tiktok"></span><span class="t">09:00</span></span>
+            </li>
+            <li class="ch-row">
+              <span class="ch-row__ico" style="color:#F2749D" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <span class="ch-row__name"><b>인스타그램</b><span>@taxnote.kr · 카드뉴스 5장</span></span>
+              <span class="ch-row__st"><span class="st-txt st-txt--wait" data-ch="instagram"></span><span class="t">12:00</span></span>
+            </li>
+            <li class="ch-row">
+              <span class="ch-row__ico" style="color:#7FA9FF" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l.4-3H13v-2c0-.6.4-1 1-1Z"/></svg>
+              </span>
+              <span class="ch-row__name"><b>페이스북</b><span>세금 노트 · 릴스 + 요약 글</span></span>
+              <span class="ch-row__st"><span class="st-txt st-txt--wait" data-ch="facebook"></span><span class="t">12:00</span></span>
+            </li>
+            <li class="ch-row">
+              <span class="ch-row__ico" style="color:#EDF2F9" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M16 8v5.4a3 3 0 0 0 5.4 1.7A9 9 0 1 0 17.6 20"/></svg>
+              </span>
+              <span class="ch-row__name"><b>쓰레드</b><span>@taxnote.kr · 원고 1편</span></span>
+              <span class="ch-row__st"><span class="st-txt st-txt--wait" data-ch="threads"></span><span class="t">15:00</span></span>
+            </li>
+          </ul>
+          <div class="console__next">
+            <div class="row"><span>다음 자동 작업</span><b id="kNext">09:00 유튜브 쇼츠 &amp; 틱톡</b></div>
+            <div class="console__gen"><i id="kGen"></i></div>
+          </div>
+          <div class="console__log" id="kLog" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Pipeline ================= -->
+<section class="section pipeline" id="pipeline">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">01 — AUTOMATION PIPELINE</span>
+      <h2 class="h2">하루 6개 시점, 손대지 않아도<br><span class="hl">24시간 돌아가는 파이프라인</span></h2>
+      <p class="lead">
+        소재 수집부터 채널별 변환·업로드·리포트까지 6단계. 시간대와 채널을 눌러
+        지금 무엇이 자동으로 돌고 있는지 확인해 보세요.
+      </p>
+    </div>
+
+    <div class="sim reveal" data-d="1">
+      <div class="sim__bar">
+        <div class="chips" role="group" aria-label="채널별 자동 운영 흐름 보기">
+          <button class="chip chip--all is-active" data-channel="all" aria-pressed="true">
+            전체 타임라인
+          </button>
+          <button class="chip" data-channel="youtube" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.4 2.4 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4a2.4 2.4 0 0 0-1.7 1.7C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.8.9 1.5 1.7 1.7 1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.4 2.4 0 0 0 1.7-1.7c.4-1.5.4-4.7.4-4.7Z"/><path d="M9.8 15.3V8.7L15.5 12l-5.7 3.3Z" fill="#0A1019"/></svg>
+            유튜브 쇼츠
+          </button>
+          <button class="chip" data-channel="instagram" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            인스타그램
+          </button>
+          <button class="chip" data-channel="threads" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5.4a3 3 0 0 0 5.4 1.7A9 9 0 1 0 17.6 20"/></svg>
+            쓰레드
+          </button>
+          <button class="chip" data-channel="tiktok" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3h-2.7v11.3a2.6 2.6 0 1 1-2.2-2.6V9a5.3 5.3 0 1 0 4.9 5.3V8.8a6.3 6.3 0 0 0 3.5 1.1V7.2a3.6 3.6 0 0 1-3.5-3.6V3Z"/></svg>
+            틱톡
+          </button>
+          <button class="chip" data-channel="facebook" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l.4-3H13v-2c0-.6.4-1 1-1Z"/></svg>
+            페이스북
+          </button>
+        </div>
+        <button class="btn btn--ghost btn--sm" id="playBtn" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
+          <span>자동 재생</span>
+        </button>
+      </div>
+
+      <!-- 24h ruler -->
+      <div class="ruler" id="ruler" aria-hidden="true">
+        <div class="ruler__ticks" id="rulerTicks"></div>
+        <div class="ruler__labels" id="rulerLabels"></div>
+        <div class="ruler__now" id="rulerNow" style="left:0%"></div>
+      </div>
+
+      <!-- stages -->
+      <div class="rail" id="rail" role="tablist" aria-label="24시간 자동 운영 타임라인">
+        <div class="rail__line" aria-hidden="true"><i id="railFill"></i></div>
+        <button class="node is-active" role="tab" aria-selected="true" data-stage="0">
+          <span class="node__dot" aria-hidden="true"></span>
+          <span class="node__time">06:00</span>
+          <span class="node__label">이슈·트렌드 수집</span>
+        </button>
+        <button class="node" role="tab" aria-selected="false" data-stage="1">
+          <span class="node__dot" aria-hidden="true"></span>
+          <span class="node__time">08:00</span>
+          <span class="node__label">원고·영상 동시 생성</span>
+        </button>
+        <button class="node" role="tab" aria-selected="false" data-stage="2">
+          <span class="node__dot" aria-hidden="true"></span>
+          <span class="node__time">09:00</span>
+          <span class="node__label">쇼츠 &amp; 틱톡 업로드</span>
+        </button>
+        <button class="node" role="tab" aria-selected="false" data-stage="3">
+          <span class="node__dot" aria-hidden="true"></span>
+          <span class="node__time">12:00</span>
+          <span class="node__label">인스타 &amp; 페이스북</span>
+        </button>
+        <button class="node" role="tab" aria-selected="false" data-stage="4">
+          <span class="node__dot" aria-hidden="true"></span>
+          <span class="node__time">15:00</span>
+          <span class="node__label">쓰레드 업로드</span>
+        </button>
+        <button class="node" role="tab" aria-selected="false" data-stage="5">
+          <span class="node__dot" aria-hidden="true"></span>
+          <span class="node__time">22:00</span>
+          <span class="node__label">반응 집계·예약</span>
+        </button>
+      </div>
+
+      <!-- detail -->
+      <div class="detail" id="detail" aria-live="polite">
+        <div class="detail__in" id="detailIn">
+          <div class="detail__main" id="detailMain">
+            <div class="detail__time">12:00<span>KST</span></div>
+            <div class="detail__kicker">04 · DISTRIBUTE</div>
+            <h3 class="detail__title">인스타그램 카드뉴스 &amp; 페이스북 자동 업로드</h3>
+            <p class="detail__desc">카드뉴스 5장을 인스타그램 캐러셀로, 같은 소재를 페이스북 페이지에는 영상과 요약 글로 올립니다. 점심시간 트래픽에 맞춘 게시 시각입니다.</p>
+            <ul class="detail__list">
+              <li>인스타그램: 카드뉴스 5장 캐러셀 + 해시태그 세팅</li>
+              <li>페이스북: 릴스 영상 + 절세 꿀팁 요약 글</li>
+              <li>게시 실패 시 자동 재시도 · 담당자 알림</li>
+            </ul>
+            <div class="detail__out">
+              <span class="tag">산출물 <b>카드뉴스 5장</b></span>
+              <span class="tag">산출물 <b>요약 글</b></span>
+            </div>
+            <div class="detail__foot">
+              <div>사람 개입<b>0분</b></div>
+              <div>게시 시각<b>12:00 자동</b></div>
+              <div>채널<b>2개</b></div>
+            </div>
+          </div>
+          <div class="detail__side" id="detailSide"></div>
+        </div>
+      </div>
+      <p class="detail__hint">※ 시간대(06:00~22:00)와 채널을 눌러 각 단계의 자동 처리 내용과 산출물을 확인할 수 있습니다. 표시된 상태는 현재 시각 기준 시뮬레이션입니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Showcase ================= -->
+<section class="section showcase" id="reference">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">02 — CHANNEL REFERENCE</span>
+      <h2 class="h2">같은 소재 1건, <span class="hl">5개 채널에 이렇게 올라갑니다</span></h2>
+      <p class="lead">
+        실제로 제작한 세무 콘텐츠와 채널별 자동 업로드 화면입니다.
+        영상은 재생할 수 있고, 카드뉴스는 좌우로 넘겨 5장 전체를 확인할 수 있습니다.
+      </p>
+    </div>
+
+    <div class="sc-grid">
+      <!-- YouTube Shorts -->
+      <article class="sc-card sc-card--4 reveal" id="ch-youtube" data-d="1">
+        <div class="sc-head">
+          <span class="sc-ico sc-ico--yt" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.2-.4-4.7a2.4 2.4 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4a2.4 2.4 0 0 0-1.7 1.7C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.8.9 1.5 1.7 1.7 1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.4 2.4 0 0 0 1.7-1.7c.4-1.5.4-4.7.4-4.7Z"/><path d="M9.8 15.3V8.7L15.5 12l-5.7 3.3Z" fill="#0A1019"/></svg>
+          </span>
+          <span class="sc-title"><b>YouTube Shorts</b><span>@taxnote</span></span>
+          <span class="badge badge--ok"><span class="dot"></span>완료 · 09:00</span>
+        </div>
+        <div class="sc-body">
+          <div class="phone">
+            <div class="phone__frame">
+              <div class="phone__screen">
+                <div class="statusbar"><span>9:00</span><span class="sig" aria-hidden="true"><i></i><i></i><i></i></span><span class="bat" aria-hidden="true"></span></div>
+                <div class="yt">
+                  <video class="vid js-video" src="./assets/tax-shorts-10s-bgm.mp4" poster="./assets/tax-shorts-thumbnail.png" controls playsinline muted loop preload="metadata" aria-label="세무 절세 꿀팁 5가지 쇼츠 영상"></video>
+                  <div class="yt__grad" aria-hidden="true"></div>
+                  <div class="yt__top">
+                    <span class="yt__logo">
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.4 2.4 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4a2.4 2.4 0 0 0-1.7 1.7C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.8.9 1.5 1.7 1.7 1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.4 2.4 0 0 0 1.7-1.7c.4-1.5.4-4.7.4-4.7Z"/></svg>
+                      Shorts
+                    </span>
+                    <span style="font-size:13px;color:#fff;opacity:.85" aria-hidden="true">⌕</span>
+                  </div>
+                  <span class="yt__chip"><span class="dot" style="width:5px;height:5px"></span>AUTO UPLOADED · 09:00</span>
+                  <div class="yt__rail" aria-hidden="true">
+                    <span class="act"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-8-4.8-8-10.2A4.8 4.8 0 0 1 12 7.6a4.8 4.8 0 0 1 8 3.2C20 16.2 12 21 12 21Z"/></svg><span>좋아요</span></span>
+                    <span class="act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 1 1-3.2-6.4L21 4v6h-6"/></svg><span>리믹스</span></span>
+                    <span class="act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-4.2A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4Z"/></svg><span>댓글</span></span>
+                    <span class="act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 16V3M8 7l4-4 4 4"/></svg><span>공유</span></span>
+                  </div>
+                  <div class="yt__meta">
+                    <div class="yt__who">
+                      <span class="yt__ava">세</span>
+                      <b>@taxnote</b>
+                      <span class="sub">구독</span>
+                    </div>
+                    <p class="yt__title">모르면 매년 수백만 원 손해! 사장님·프리랜서 필수 절세 꿀팁 5가지</p>
+                    <p class="yt__music">
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3h-2.7v11.3a2.6 2.6 0 1 1-2.2-2.6V9a5.3 5.3 0 1 0 4.9 5.3V8.8a6.3 6.3 0 0 0 3.5 1.1V7.2a3.6 3.6 0 0 1-3.5-3.6V3Z"/></svg>
+                      원본 오디오 · 세금 노트
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sc-foot">
+          <span><b>자동 업로드</b> 09:00</span><span class="sep">/</span>
+          <span>세로 9:16 · 10초</span><span class="sep">/</span>
+          <span>영상 재생</span>
+        </div>
+      </article>
+
+      <!-- Instagram -->
+      <article class="sc-card sc-card--4 reveal" id="ch-instagram" data-d="2">
+        <div class="sc-head">
+          <span class="sc-ico sc-ico--ig" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <span class="sc-title"><b>Instagram</b><span>@taxnote.kr</span></span>
+          <span class="badge badge--ok"><span class="dot"></span>완료 · 12:00</span>
+        </div>
+        <div class="sc-body">
+          <div class="ig js-carousel" id="igCarousel" tabindex="0" role="group" aria-label="인스타그램 카드뉴스 5장, 좌우 버튼으로 넘겨보기">
+            <div class="ig__top">
+              <span class="ig__ava">세</span>
+              <span class="ig__who"><b>taxnote.kr</b><span>세금 노트 · 사장님 절세 가이드</span></span>
+              <span class="ig__more" aria-hidden="true">•••</span>
+            </div>
+            <div class="ig__stage js-stage">
+              <div class="ig__slides" id="igSlides">
+                <img src="./assets/tax-insta-card-1.png" alt="카드뉴스 1장 — 사업용 카드·계좌, 홈택스에 등록하세요">
+                <img src="./assets/tax-insta-card-2.png" alt="카드뉴스 2장 — 가족 인건비는 계좌이체와 근로소득 신고 기록을 함께">
+                <img src="./assets/tax-insta-card-3.png" alt="카드뉴스 3장 — 접대비 건당 3만 원 기준">
+                <img src="./assets/tax-insta-card-4.png" alt="카드뉴스 4장 — 프리랜서 3.3% 원천징수와 종합소득세 환급">
+                <img src="./assets/tax-insta-card-5.png" alt="카드뉴스 5장 — 매출·경비·노무 점검과 연말 증빙">
+              </div>
+              <button class="ig__nav ig__nav--prev" id="igPrev" aria-label="이전 카드" disabled>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+              </button>
+              <button class="ig__nav ig__nav--next" id="igNext" aria-label="다음 카드">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <span class="ig__count" hidden aria-hidden="true"></span>
+            </div>
+            <div class="ig__dots" id="igDots" role="tablist" aria-label="카드 선택">
+              <button class="on" role="tab" aria-selected="true" aria-label="1번째 카드"></button>
+              <button role="tab" aria-selected="false" aria-label="2번째 카드"></button>
+              <button role="tab" aria-selected="false" aria-label="3번째 카드"></button>
+              <button role="tab" aria-selected="false" aria-label="4번째 카드"></button>
+              <button role="tab" aria-selected="false" aria-label="5번째 카드"></button>
+            </div>
+            <div class="ig__acts" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 21s-8-4.8-8-10.2A4.8 4.8 0 0 1 12 7.6a4.8 4.8 0 0 1 8 3.2C20 16.2 12 21 12 21Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-4.2A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 3 11 14M22 3l-7 18-4-7-7-4 18-7Z"/></svg>
+              <svg class="save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M6 3h12v18l-6-4.5L6 21V3Z"/></svg>
+            </div>
+            <p class="ig__cap">
+              <b>taxnote.kr</b> 사업용 카드·계좌, 홈택스에 등록하세요 — 놓치는 경비 1원도 없게.
+              옆으로 넘겨서 사장님·프리랜서 필수 절세 포인트 5가지를 확인하세요.
+              <span class="tag">#경비처리 #홈택스 #사업자 #절세팁</span>
+            </p>
+            <div class="ig__time"><span class="ok">자동 게시 완료</span> · 12:00 · 카드뉴스 5장</div>
+          </div>
+        </div>
+        <div class="sc-foot">
+          <span><b>자동 업로드</b> 12:00</span><span class="sep">/</span>
+          <span>4:5 · 5장 캐러셀</span><span class="sep">/</span>
+          <span>좌우 버튼</span>
+        </div>
+      </article>
+
+      <!-- TikTok -->
+      <article class="sc-card sc-card--4 reveal" id="ch-tiktok" data-d="3">
+        <div class="sc-head">
+          <span class="sc-ico sc-ico--tt" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3h-2.7v11.3a2.6 2.6 0 1 1-2.2-2.6V9a5.3 5.3 0 1 0 4.9 5.3V8.8a6.3 6.3 0 0 0 3.5 1.1V7.2a3.6 3.6 0 0 1-3.5-3.6V3Z"/></svg>
+          </span>
+          <span class="sc-title"><b>TikTok</b><span>@taxnote</span></span>
+          <span class="badge badge--ok"><span class="dot"></span>완료 · 09:00</span>
+        </div>
+        <div class="sc-body">
+          <div class="phone">
+            <div class="phone__frame">
+              <div class="phone__screen">
+                <div class="statusbar"><span>9:00</span><span class="sig" aria-hidden="true"><i></i><i></i><i></i></span><span class="bat" aria-hidden="true"></span></div>
+                <div class="tt">
+                  <video class="vid js-video" src="./assets/tax-shorts-10s-bgm.mp4" poster="./assets/tax-shorts-thumbnail.png" controls playsinline muted loop preload="none" aria-label="틱톡 자동 업로드된 세무 쇼츠 영상"></video>
+                  <div class="tt__grad" aria-hidden="true"></div>
+                  <div class="tt__top"><span>팔로잉</span><span class="on">추천</span></div>
+                  <span class="tt__chip"><span class="dot" style="width:5px;height:5px"></span>AUTO UPLOADED · 09:00</span>
+                  <div class="tt__rail" aria-hidden="true">
+                    <span class="act"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-8-4.8-8-10.2A4.8 4.8 0 0 1 12 7.6a4.8 4.8 0 0 1 8 3.2C20 16.2 12 21 12 21Z"/></svg><span>좋아요</span></span>
+                    <span class="act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-4.2A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4Z"/></svg><span>댓글</span></span>
+                    <span class="act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4.5L6 21V3Z"/></svg><span>저장</span></span>
+                    <span class="act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 3 11 14M22 3l-7 18-4-7-7-4 18-7Z"/></svg><span>공유</span></span>
+                    <span class="tt__disc"><i></i></span>
+                  </div>
+                  <div class="tt__meta">
+                    <b>@taxnote</b>
+                    <p>모르면 매년 수백만 원 손해 <span class="hl">#절세꿀팁</span> <span class="hl">#세무사</span> <span class="hl">#사장님필수</span></p>
+                    <div class="tt__music">
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="9" height="9" aria-hidden="true"><path d="M16.5 3h-2.7v11.3a2.6 2.6 0 1 1-2.2-2.6V9a5.3 5.3 0 1 0 4.9 5.3V8.8a6.3 6.3 0 0 0 3.5 1.1V7.2a3.6 3.6 0 0 1-3.5-3.6V3Z"/></svg>
+                      <span>원본 오디오 · 세금 노트 · 원본 오디오 · 세금 노트 ·&nbsp;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sc-foot">
+          <span><b>자동 업로드</b> 09:00</span><span class="sep">/</span>
+          <span>동일 영상 · 세로 UI</span><span class="sep">/</span>
+          <span>캡션 자동</span>
+        </div>
+      </article>
+
+      <!-- Threads -->
+      <article class="sc-card sc-card--6 reveal" id="ch-threads" data-d="4">
+        <div class="sc-head">
+          <span class="sc-ico sc-ico--th" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M16 8v5.4a3 3 0 0 0 5.4 1.7A9 9 0 1 0 17.6 20"/></svg>
+          </span>
+          <span class="sc-title"><b>Threads</b><span>@taxnote.kr</span></span>
+          <span class="badge badge--ok"><span class="dot"></span>완료 · 15:00</span>
+        </div>
+        <div class="sc-body">
+          <div class="th">
+            <div class="th__top">
+              <svg class="th__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5.4a3 3 0 0 0 5.4 1.7A9 9 0 1 0 17.6 20"/></svg>
+              <b>Threads</b>
+              <span class="auto"><span class="dot" style="width:5px;height:5px"></span>AUTO POSTED · 15:00</span>
+            </div>
+            <div class="th__post">
+              <div class="th__head">
+                <span class="th__ava">세</span>
+                <span class="th__who"><b>taxnote.kr</b><span>3분</span></span>
+                <span class="th__more" aria-hidden="true">•••</span>
+              </div>
+              <div class="th__text">
+                <p>세금은 12월이 되면 갑자기 줄어들지 않습니다.</p>
+                <p>사업용 카드와 계좌를 홈택스에 미리 등록해두면 경비 증빙이 자동으로 쌓입니다. 놓치는 경비 1원도 없게요.</p>
+                <p>가족에게 인건비를 준다면 계좌이체 내역과 근로소득 신고 기록을 함께 남겨두세요. 둘 중 하나만 있으면 비용으로 인정받기 어렵습니다.</p>
+                <p>접대비는 건당 3만 원이 기준입니다. 넘는 금액은 세금계산서나 법인카드만 인정되니, 간이영수증만 모아두면 연말에 손실이 됩니다.</p>
+                <p>프리랜서라면 3.3% 원천징수된 소득, 5월 종합소득세 신고에서 경비와 인적공제를 반영하면 환급될 수 있습니다.</p>
+                <p>매출·경비·노무를 한 번에 점검해두면 연말에 남는 선택지가 달라집니다.</p>
+                <p class="q">올해 증빙, 아직 책상 위에 쌓여 있나요?</p>
+              </div>
+              <div class="th__acts" aria-hidden="true">
+                <span class="grp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 21s-8-4.8-8-10.2A4.8 4.8 0 0 1 12 7.6a4.8 4.8 0 0 1 8 3.2C20 16.2 12 21 12 21Z"/></svg></span>
+                <span class="grp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-4.2A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4Z"/></svg></span>
+                <span class="grp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span>
+                <span class="grp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 3 11 14M22 3l-7 18-4-7-7-4 18-7Z"/></svg></span>
+              </div>
+            </div>
+            <div class="th__foot">
+              <span class="ok">자동 게시 완료</span>
+              <span>· 원고 전체 게시 · 해시태그 규칙 적용</span>
+              <span class="time">15:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="sc-foot">
+          <span><b>자동 게시</b> 15:00</span><span class="sep">/</span>
+          <span>원고 1편 전체</span><span class="sep">/</span>
+          <span>assets/tax-threads-post.txt</span>
+        </div>
+      </article>
+
+      <!-- Facebook -->
+      <article class="sc-card sc-card--6 reveal" id="ch-facebook" data-d="5">
+        <div class="sc-head">
+          <span class="sc-ico sc-ico--fb" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l.4-3H13v-2c0-.6.4-1 1-1Z"/></svg>
+          </span>
+          <span class="sc-title"><b>Facebook</b><span>세금 노트 · 페이지</span></span>
+          <span class="badge badge--ok"><span class="dot"></span>완료 · 12:00</span>
+        </div>
+        <div class="sc-body">
+          <div class="fb">
+            <div class="fb__top">
+              <span class="fb__ava">세</span>
+              <span class="fb__who"><b>세금 노트</b><span>2026년 11월 26일 · 🌐</span></span>
+              <button class="fb__follow" type="button">팔로우</button>
+            </div>
+            <p class="fb__text">
+              연말정산, 아직 늦지 않았습니다. <b>사장님·프리랜서가 놓치기 쉬운 절세 포인트 5가지</b>를
+              30초 영상으로 정리했습니다. 올해 증빙, 아직 책상 위에 쌓여 있나요?
+            </p>
+            <div class="fb__body">
+              <div class="fb__media">
+                <video class="js-video" src="./assets/tax-shorts-10s-bgm.mp4" poster="./assets/tax-shorts-thumbnail.png" controls playsinline muted loop preload="none" aria-label="페이스북 릴스로 자동 업로드된 세무 쇼츠 영상"></video>
+                <span class="fb__chip"><span class="dot" style="width:5px;height:5px"></span>AUTO UPLOADED · 12:00</span>
+              </div>
+              <ul class="fb__tips">
+                <li><b>01</b><span>사업용 카드·계좌를 홈택스에 등록 → 경비 증빙 자동 수집</span></li>
+                <li><b>02</b><span>가족 인건비는 계좌이체 + 근로소득 신고 기록을 세트로</span></li>
+                <li><b>03</b><span>접대비 건당 3만 원, 초과분은 세금계산서·법인카드만</span></li>
+                <li><b>04</b><span>프리랜서 3.3% 원천징수, 5월 종합소득세에서 환급 가능</span></li>
+                <li><b>05</b><span>매출·경비·노무를 한 번에 점검 → 연말 선택지가 달라집니다</span></li>
+              </ul>
+            </div>
+            <div class="fb__stats">
+              <span class="emo" aria-hidden="true">👍 ❤️ 👏</span>
+              <span>댓글 · 공유</span>
+            </div>
+            <div class="fb__acts" aria-hidden="true">
+              <button type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h3Zm0 0 4-7a2 2 0 0 1 3 2v3h4.2a2 2 0 0 1 2 2.4l-1.4 6A2 2 0 0 1 17 19H7"/></svg>좋아요</button>
+              <button type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-4.2A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4Z"/></svg>댓글</button>
+              <button type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 16V3M8 7l4-4 4 4"/></svg>공유</button>
+            </div>
+          </div>
+        </div>
+        <div class="sc-foot">
+          <span><b>자동 업로드</b> 12:00</span><span class="sep">/</span>
+          <span>릴스 + 요약 글</span><span class="sep">/</span>
+          <span>페이지 게시</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- upload log -->
+    <div class="log-panel reveal" data-d="2">
+      <div class="log-panel__top">
+        <span class="mono">2026-11-26</span>
+        <b>자동 업로드 로그</b>
+        <span class="badge badge--ok"><span class="dot"></span>5 / 5 채널 완료</span>
+      </div>
+      <table class="log-table">
+        <caption class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">채널별 자동 업로드 로그</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="mono">TIME</th>
+            <th scope="col">CHANNEL</th>
+            <th scope="col">ASSET</th>
+            <th scope="col">STATUS</th>
+            <th scope="col">VIEW</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mono">09:00</td>
+            <td><b>YouTube Shorts</b></td>
+            <td>tax-shorts-10s-bgm.mp4</td>
+            <td><span class="ok">● 업로드 완료</span></td>
+            <td><a href="#ch-youtube">보기</a></td>
+          </tr>
+          <tr>
+            <td class="mono">09:00</td>
+            <td><b>TikTok</b></td>
+            <td>tax-shorts-10s-bgm.mp4</td>
+            <td><span class="ok">● 업로드 완료</span></td>
+            <td><a href="#ch-tiktok">보기</a></td>
+          </tr>
+          <tr>
+            <td class="mono">12:00</td>
+            <td><b>Instagram</b></td>
+            <td>tax-insta-card-1~5.png</td>
+            <td><span class="ok">● 게시 완료</span></td>
+            <td><a href="#ch-instagram">보기</a></td>
+          </tr>
+          <tr>
+            <td class="mono">12:00</td>
+            <td><b>Facebook</b></td>
+            <td>tax-shorts-10s-bgm.mp4 + 요약 글</td>
+            <td><span class="ok">● 게시 완료</span></td>
+            <td><a href="#ch-facebook">보기</a></td>
+          </tr>
+          <tr>
+            <td class="mono">15:00</td>
+            <td><b>Threads</b></td>
+            <td>tax-threads-post.txt</td>
+            <td><span class="ok">● 게시 완료</span></td>
+            <td><a href="#ch-threads">보기</a></td>
+          </tr>
+          <tr>
+            <td class="mono">22:00</td>
+            <td><b>Daily Report</b></td>
+            <td>5개 채널 반응 집계 · 다음 날 예약</td>
+            <td><span class="ok" style="color:#F0B660">● 예약 대기</span></td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Effect (light) ================= -->
+<section class="section light" id="effect">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">03 — EFFECT</span>
+      <h2 class="h2">SNS는 시스템이, <span class="hl">상담은 대표님이</span></h2>
+      <p class="lead lead--dark">
+        세무 콘텐츠는 매일 나가야 효과가 쌓입니다. 사람이 매일 만들 수 없는 양을
+        같은 톤·같은 시간에 자동으로 내보내는 것이 자동화의 핵심입니다.
+      </p>
+    </div>
+
+    <div class="stat-grid reveal" data-d="1">
+      <div class="stat">
+        <b data-count="5">0<em>개 채널</em></b>
+        <span>유튜브 쇼츠 · 인스타그램 · 쓰레드 · 틱톡 · 페이스북 동시 운영</span>
+        <div class="bar"><i data-bar="100"></i></div>
+      </div>
+      <div class="stat">
+        <b data-count="60">0<em>시간+</em></b>
+        <span>기획·제작·업로드에 드는 월 운영 공수 절감</span>
+        <div class="bar"><i data-bar="88"></i></div>
+      </div>
+      <div class="stat">
+        <b data-count="1">0<em>소재/일</em></b>
+        <span>세무 이슈 1건이 5개 채널 산출물로 변환</span>
+        <div class="bar"><i data-bar="64"></i></div>
+      </div>
+      <div class="stat">
+        <b data-count="24">0<em>/7</em></b>
+        <span>업무가 몰려도 발행이 끊기지 않는 무인 운영</span>
+        <div class="bar"><i data-bar="100"></i></div>
+      </div>
+    </div>
+
+    <div class="effect-split">
+      <div class="panel reveal" data-d="2">
+        <div class="panel__head">
+          <b>직접 운영 vs 24시간 자동화</b>
+          <span>세무사 사무소의 일반적인 SNS 운영 방식과 비교</span>
+        </div>
+        <table class="cmp">
+          <thead>
+            <tr>
+              <th scope="col">항목</th>
+              <th scope="col">담당자 직접 운영</th>
+              <th scope="col">24시간 자동화</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>소재 찾기</td>
+              <td>매일 아침 검색·회의</td>
+              <td>06:00 자동 수집</td>
+            </tr>
+            <tr>
+              <td>원고·디자인</td>
+              <td>채널마다 따로 제작</td>
+              <td>1소재 → 5채널 동시 변환</td>
+            </tr>
+            <tr>
+              <td>업로드</td>
+              <td>채널별 로그인·수동 업로드</td>
+              <td>예약 시각 자동 업로드</td>
+            </tr>
+            <tr>
+              <td>일관성</td>
+              <td>업무가 몰리면 발행 중단</td>
+              <td>365일 같은 톤·같은 시간</td>
+            </tr>
+            <tr>
+              <td>리포트</td>
+              <td>채널마다 따로 확인</td>
+              <td>22:00 일일 리포트 1장</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="aud reveal" data-d="3">
+        <div class="panel__head" style="padding:4px 2px 6px;border:0">
+          <b style="font-size:13.5px">이런 곳에 바로 맞습니다</b>
+        </div>
+        <ul class="aud">
+          <li>
+            <span class="n">A</span>
+            <div><b>세무법인·회계법인</b><span>전문직 신뢰감을 유지하면서 채널 수를 늘리고 싶은 곳</span></div>
+          </li>
+          <li>
+            <span class="n">B</span>
+            <div><b>1인 세무사무소</b><span>상담·신고 시즌에 콘텐츠 제작까지 손댈 여력이 없는 곳</span></div>
+          </li>
+          <li>
+            <span class="n">C</span>
+            <div><b>절세·세무 콘텐츠 채널</b><span>매일 같은 톤으로 발행되는 정보형 채널이 필요한 곳</span></div>
+          </li>
+        </ul>
+        <p style="font-size:11.5px;color:#6B7787;line-height:1.7;margin-top:2px">
+          ※ 표의 소요 시간은 일반적인 수동 운영 기준의 예시이며, 채널 수·발행 주기·검수 방식에 따라 달라집니다.
+          네이버 블로그 등 추가 채널 확장도 같은 구조로 가능합니다.
+        </p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal" data-d="1">
+        <span class="step__n">STEP 01</span>
+        <b>진단 (1주)</b>
+        <span>운영 중인 채널·소재·톤을 확인하고 자동화 범위를 확정합니다.</span>
+        <span class="step__line" aria-hidden="true"></span>
+      </div>
+      <div class="step reveal" data-d="2">
+        <span class="step__n">STEP 02</span>
+        <b>톤 세팅</b>
+        <span>말투·금지어·해시태그·면책 문구 규칙을 브랜드에 맞춰 고정합니다.</span>
+        <span class="step__line" aria-hidden="true"></span>
+      </div>
+      <div class="step reveal" data-d="3">
+        <span class="step__n">STEP 03</span>
+        <b>파일럿 (2주)</b>
+        <span>쇼츠·카드뉴스·쓰레드를 실제 발행하며 검수 기준을 맞춥니다.</span>
+        <span class="step__line" aria-hidden="true"></span>
+      </div>
+      <div class="step reveal" data-d="4">
+        <span class="step__n">STEP 04</span>
+        <b>상시 운영</b>
+        <span>5개 채널 무인 운영과 월간 리포트로 이어집니다.</span>
+        <span class="step__line" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block reveal" id="proposal" data-d="2">
+      <div>
+        <span class="eyebrow">04 — PROPOSAL</span>
+        <h3>세무사 사무소용 SNS 자동화 제안서</h3>
+        <p>
+          채널 구성과 발행 주기, 운영 범위를 정리한 제안서입니다.
+          이 페이지의 산출물은 모두 실제 제작된 세무 콘텐츠로 구성되어 있습니다.
+        </p>
+        <div class="cta-meta">
+          <span>구성 <b>5개 채널</b></span>
+          <span>발행 <b>1일 1소재</b></span>
+          <span>검수 <b>승인 후 무인 게시</b></span>
+        </div>
+      </div>
+      <div class="acts">
+        <a class="btn btn--amber" href="./assets/sns-full-automation-proposal.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg>
+          제안서 PDF 열기
+        </a>
+        <a class="btn btn--ghost" href="#reference">산출물 다시 보기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Footer ================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="logo" href="#top" aria-label="맨 위로">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 6.5v11l9.5-5.5L9 6.5Z"/></svg>
+          </span>
+          <span class="logo__txt"><b>SNS AUTO 24</b><span>TAX REFERENCE</span></span>
+        </a>
+        <p>세무법인·세무사 사무소를 위한 24시간 SNS 자동화 레퍼런스.<br>
+          소재 수집 · 채널 변환 · 자동 업로드 · 반응 집계까지 무인 운영 구조를 제안합니다.</p>
+      </div>
+      <nav class="foot-nav" aria-label="바닥글 메뉴">
+        <a href="#pipeline">24시간 파이프라인</a>
+        <a href="#ch-youtube">유튜브 쇼츠</a>
+        <a href="#ch-instagram">인스타그램</a>
+        <a href="#ch-threads">쓰레드</a>
+        <a href="#ch-tiktok">틱톡</a>
+        <a href="#ch-facebook">페이스북</a>
+        <a href="#effect">도입 효과</a>
+      </nav>
+      <!-- 연락처: 아래 두 줄만 수정하면 됩니다 -->
+      <div class="foot-contact">
+        <b>주식회사 쿠스코</b><br>
+        대표 최정률<br>
+        <a href="mailto:choichoi4345@gmail.com">choichoi4345@gmail.com</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="note">
+        본 페이지의 채널 화면은 실제 제작된 세무 콘텐츠와 자동 업로드 결과를 재현한 레퍼런스 데모이며,
+        각 플랫폼의 실제 UI와 다를 수 있습니다. 표시된 반응·성과 수치는 포함하지 않았습니다.
+      </span>
+      <span>© 2026 CUSCO. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/app.js"></script>
+</body>
+</html>
